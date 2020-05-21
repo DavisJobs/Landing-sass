@@ -1,0 +1,457 @@
+/* 
+    TODO: 
+    GLOBALS 
+*/
+/* 
+    TODO: 
+    URL 
+*/
+/* 
+    TODO: 
+    COLORS 
+ */
+/* 
+    TODO: 
+    FONT FAMILY  
+    GLOBAL & BASE
+*/
+/* 
+    TODO: 
+    FONT SIZE 
+*/
+/*
+    TODO:
+    LINE HEIGHT
+*/
+/*
+ TODO:
+ FONT SIZE - MEASURE
+*/
+/*
+    TODO:
+    FONTS - MARGIN
+*/
+/* 
+    TODO: 
+    Font Weight 
+*/
+/*
+    TODO:
+    MEDIA-QUERIES
+*/
+/* 
+    TODO:
+    BUTTONS
+*/
+/* 
+  TODO:
+  Button Radius
+*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ai-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fw-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* TODO: Font Face */
+@font-face {
+  font-family: "open_sansregular";
+  src: url("http://127.0.0.1:5500opensans-regular-webfont.woff2") format("woff2"), url("http://127.0.0.1:5500opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinssemibold";
+  src: url("http://127.0.0.1:5500poppins-semibold-webfont.woff2") format("woff2"), url("http://127.0.0.1:5500poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "open_sansregular";
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppinssemibold";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+.button--global {
+  display: inline-block;
+  padding: 15px 60px;
+  color: #674baf;
+  font-size: 1.4rem;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.button--global:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero__illustration {
+  width: 100%;
+  height: 562.78px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__illustration {
+    width: 600px;
+    padding-bottom: 5rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hero__illustration {
+    width: 100%;
+  }
+}
+
+.hero__illustration--image {
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 620px) {
+  .hero__illustration--image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.hero__subtitle {
+  max-width: 600px;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 769px) {
+  .hero__subtitle {
+    max-width: 500px;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.hero__subtitle--h1 {
+  font-size: 3.8rem;
+  line-height: 1.5;
+}
+
+.hero__paragraph {
+  padding-top: 1rem;
+}
+
+.hero__paragraph--text {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.header {
+  padding-top: 5rem;
+}
+
+.header__title {
+  /*  */
+}
+
+@media screen and (max-width: 550px) {
+  .header__title--img {
+    width: 200px;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    padding-top: 8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-top: 16rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding-top: 25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-top: 37rem;
+  }
+}
+
+.footer__social {
+  /*  */
+}
+
+.footer__social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 550px) {
+  .footer__social__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+}
+
+.footer__social__item__li {
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.footer__social__item__li--link {
+  padding: 0.8rem 1.1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.home {
+  background: #674baf;
+}

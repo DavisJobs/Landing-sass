@@ -1,0 +1,125 @@
+@import "../tools/tools-core";
+/* 
+    TODO: 
+    GLOBALS 
+*/
+
+/* 
+    TODO: 
+    URL 
+*/
+$url-base: "http://127.0.0.1:5500";
+
+/* 
+    TODO: 
+    COLORS 
+ */
+$colors-branding: (
+  "default": #333,
+  "primary": hsl(257, 40%, 49%),
+  "secondary": #ffba7a,
+  "complementary": #3dc154,
+);
+
+$colors-neutrals: (
+  "white": #fff,
+  "black": #000,
+  "grey-light": #cbcbcb,
+);
+
+$colors-semanctic: (
+  "success": #059d2b,
+  "danger": #ffd0a5,
+  "error": #ff0000,
+  "message": #5075ea,
+);
+
+/* 
+    TODO: 
+    FONT FAMILY  
+    GLOBAL & BASE
+*/
+$font-family-global: "open_sansregular";
+$font-family: "poppinssemibold";
+
+/* 
+    TODO: 
+    FONT SIZE 
+*/
+$font-size-base: 62.5%;
+$font-size-global: pixelToRem(16);
+$font-size-h1: pixelToRem(32);
+$font-size-h2: pixelToRem(26);
+$font-size-h3: pixelToRem(24);
+$font-size-h4: pixelToRem(20);
+$font-size-h5: pixelToRem(18);
+$font-size-h6: pixelToRem(16);
+$font-size-p: $font-size-global;
+
+/*
+    TODO:
+    LINE HEIGHT
+*/
+$line-height-h1: pixelToRem(38);
+$line-height-h2: pixelToRem(32);
+$line-height-h3: pixelToRem(30);
+$line-height-h4: pixelToRem(26);
+$line-height-h5: pixelToRem(24);
+$line-height-h6: pixelToRem(22);
+$line-height-p: pixelToRem(20);
+
+/*
+ TODO:
+ FONT SIZE - MEASURE
+*/
+$measure: "rem";
+
+/*
+    TODO:
+    FONTS - MARGIN
+*/
+$margin-bottom-h1: pixelToRem(20);
+$margin-bottom-h2: pixelToRem(20);
+$margin-bottom-h3: pixelToRem(20);
+$margin-bottom-h4: pixelToRem(20);
+$margin-bottom-h5: pixelToRem(20);
+$margin-bottom-h6: pixelToRem(20);
+
+$margin-top-bottom-p: pixelToRem(20);
+
+/* 
+    TODO: 
+    Font Weight 
+*/
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+) !default;
+
+/*
+    TODO:
+    MEDIA-QUERIES
+*/
+$breakpoints: (
+  "phone": 320px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "lgdesktop": 1200px,
+) !default;
+
+/* 
+    TODO:
+    BUTTONS
+*/
+
+$button-padding-small: 5px 8px;
+$button-padding-medium: 10px 20px;
+$button-padding-large: 15px 60px;
+
+/* 
+  TODO:
+  Button Radius
+*/
+$button-radius: 30px;

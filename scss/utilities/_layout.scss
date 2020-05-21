@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  @include media-queries("lgdesktop") {
+    width: 95%;
+  }
+
+  @include media-queries("tablet") {
+    width: 96%;
+  }
+}

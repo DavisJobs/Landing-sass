@@ -1,0 +1,16 @@
+.button--global {
+  display: inline-block;
+  padding: $button-padding-large;
+  color: map-get($colors-branding, "primary");
+  font-size: pixelToRem(14);
+  border-radius: $button-radius;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  @include transition-300;
+
+  &:active {
+    box-shadow: none;
+  }
+}

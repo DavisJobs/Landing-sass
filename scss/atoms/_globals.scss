@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+
+  @include media-queries("lg-desktop") {
+    font-size: 75%;
+  }
+  @include media-queries("desktop") {
+    font-size: 56.25%;
+  }
+  @include media-queries("tablet") {
+    font-size: 50%;
+  }
+  @include media-queries("phone") {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: $font-family-global;
+  font-size: $font-size-global;
+  color: map-get($colors-neutrals, "white");
+}
+
+a {
+  text-decoration: none;
+}

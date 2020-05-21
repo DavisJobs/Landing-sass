@@ -1,0 +1,13 @@
+.header {
+  padding-top: 5rem;
+
+  &__title {
+    /*  */
+
+    @include media-queries(550px) {
+      &--img {
+        width: 200px;
+      }
+    }
+  }
+}
