@@ -16,10 +16,7 @@
     padding-top: 16rem;
   }
   @include media-queries(375px) {
-    padding-top: 25rem;
-  }
-  @include media-queries(320px) {
-    padding-top: 37rem;
+    padding-top: 20rem;
   }
 
   &__social {
